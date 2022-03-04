@@ -1,0 +1,14 @@
+spring:
+  main:
+    web-application-type: NONE
+    banner-mode: off
+  security:
+    oauth2:
+     client:
+       registration:
+          df:
+           client-id: df-api
+           authorization-grant-type: password
+       provider:
+         df:
+           token-uri: ${url}/auth/realms/df/protocol/openid-connect/token
